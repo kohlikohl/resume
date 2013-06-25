@@ -4,84 +4,114 @@
 @import "compass/css3/transform";
 @import "compass/css3/transition";
 
-
-$headlines: 'Nunito', sans-serif;
-$text: 'Muli', sans-serif;
+$headlines: 'Noto Sans', sans-serif;
+$text: 'Oxygen', sans-serif;
 $spotcolor: #333;
 $textcolor: #5f5f5f;
 
-
-body{
-	font-size: 68.8%;
-	font-family: 'Muli', sans-serif;
-	color: $textcolor;
-	line-height: 1.1em;
+body {
+  font-size: 68.8%;
+  font-family: 'Muli', sans-serif;
+  color: $textcolor;
+  line-height: 1.1em;
 }
 
-h1{
-	font-size:3.0em;
-	color:$spotcolor; 
-	font-family: $headlines;
-	line-height:1em;
-	
-	span{color:$textcolor;display:block;font-size:0.5em;font-family:$text;line-height:1em;}
+h1 {
+  font-size: 3.0em;
+  color: $spotcolor;
+  font-family: $headlines;
+  line-height: 1em;
+
+  span {
+    color: $textcolor;
+    display: block;
+    font-size: 0.5em;
+    font-family: $text;
+    line-height: 1em;
+  }
 }
-h2{display:block;clear:both;font-family: $headlines; font-size:1.5em; color:$spotcolor;line-height:1em;}
-h3{font-size:1.125em;line-height:1em;}
-h4{font-weight:bold;margin-bottom:5px;}
+
+h2 {
+  display: block;
+  clear: both;
+  font-family: $headlines;
+  font-size: 1.5em;
+  color: $spotcolor;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1.125em;
+  line-height: 1em;
+}
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
 a {
-	color: darken($textcolor,30%);
-	text-decoration: none;
-	font-weight: bold;
-	//border-bottom: 1px dotted $spotcolor;
-	&:hover{color: $spotcolor;}
+  color: darken($textcolor, 30%);
+  text-decoration: none;
+  //border-bottom: 1px dotted $spotcolor;
+  &:hover {
+    color: $spotcolor;
+  }
 }
-p {margin:10px 0}
 
-.wrapper{
-	margin: 0 auto;
-	//margin-top: 20px;
-	//margin-bottom: 20px;
-	//width:960px;
-	//padding: 50px 50px;
-	background-color:rgba(255, 255, 255, 0.75);
-	@include border-radius(20px, 20px);
-	
-	img{
-		float:left; @include border-radius(10px, 10px); margin: 0 5px; width:60px;
-	}
-	.mybeautifulself{margin-right:15px;}
-	
-	.contact-details{
-		float:right;
-		position:relative;
-		top:-35px;
-		span{width:100px;float:left;text-align:right;padding-right:10px;font-weight:bold}
-	}
-	
-	section{
-		margin-top:25px;
-		//width:700px;
-		
-		header{margin-bottom:10px;}
-		
-		.projects{
-			display:none;
-			float:right;
-			position:relative; 
-			top: 0px;
-			margin-right: -260px;
-			margin-left: 50px;
-			
-			li{float:left;width:110px;text-align:center;}
-		}
-		p span, li span{
-			white-space:nowrap;font-style: italic;
-			&:after {content: "]";}
-			&:before {content: "[";}
-		}
-		
-	}
-	.notsomuch{margin-top:15px;}	
+p {
+  margin: 10px 0
+}
+
+.wrapper {
+  margin: 0 auto;
+  //margin-top: 20px;
+  //margin-bottom: 20px;
+  //width:960px;
+  //padding: 50px 50px;
+  background-color: rgba(255, 255, 255, 0.75);
+  @include border-radius(20px, 20px);
+
+  img {
+    float: left;
+    @include border-radius(3px, 3px);
+    margin: 0 5px;
+    width: 50px;
+  }
+  .profile-image {
+    margin-right: 15px;
+    margin-top: -5px;
+  }
+
+  .contact-details {
+    float: right;
+    position: relative;
+    top: -35px;
+    span {
+      width: 100px;
+      float: left;
+      text-align: right;
+      padding-right: 10px;
+      font-weight: bold
+    }
+  }
+
+  section {
+    margin-top: 25px;
+    //width:700px;
+
+    header {
+      margin-bottom: 10px;
+    }
+
+    p span, li span {
+      white-space: nowrap;
+      font-style: italic;
+      text-decoration: underline;
+    }
+
+  }
+  .notsomuch {
+    margin-top: 15px;
+  }
 }

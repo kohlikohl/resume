@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:700|Oxygen);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,28 +49,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   background-image: url(../images/bg3.png);
   font-size: 87.5%;
-  font-family: 'Muli', sans-serif;
+  font-family: "Oxygen", sans-serif;
   color: #5f5f5f;
   line-height: 1.5em; }
 
 h1 {
   font-size: 4em;
-  color: #ff8700;
-  font-family: "Nunito", sans-serif;
+  color: #ff3f3f;
+  font-family: "Noto Sans", sans-serif;
   line-height: 1em; }
   h1 span {
     color: #5f5f5f;
     display: block;
     font-size: 0.5em;
-    font-family: "Muli", sans-serif;
+    font-family: "Oxygen", sans-serif;
     line-height: 1em; }
 
 h2 {
   display: block;
   clear: both;
-  font-family: "Nunito", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 2em;
-  color: #ff8700;
+  color: #ff3f3f;
   line-height: 1em; }
 
 h3 {
@@ -83,33 +84,29 @@ h4 {
 a {
   color: #131313;
   text-decoration: none;
-  border-bottom: 1px dotted #ff8700; }
+  border-bottom: 1px dotted #ff3f3f; }
   a:hover {
-    color: #ff8700; }
+    color: #ff3f3f; }
 
 p {
   margin: 20px 0; }
 
 .wrapper {
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
   width: 960px;
   padding: 50px 50px;
   background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.75);
-  -webkit-border-radius: 20px 20px;
-  -moz-border-radius: 20px / 20px;
-  border-radius: 20px / 20px; }
+  background-color: rgba(255, 255, 255, 0.75); }
   .wrapper img {
     float: left;
-    -webkit-border-radius: 10px 10px;
-    -moz-border-radius: 10px / 10px;
-    border-radius: 10px / 10px;
+    -webkit-border-radius: 3px 3px;
+    -moz-border-radius: 3px / 3px;
+    border-radius: 3px / 3px;
     margin: 0 5px;
     /* @include simple-transform(false, -0deg); @include transition-duration(2s); */ }
-  .wrapper .mybeautifulself {
-    margin-right: 15px; }
+  .wrapper .profile-image {
+    margin-right: 15px;
+    margin-top: -32px; }
   .wrapper .contact-details {
     float: right;
     position: relative;
@@ -121,30 +118,25 @@ p {
       padding-right: 10px;
       font-weight: bold; }
   .wrapper section {
-    margin-top: 100px;
-    width: 700px; }
+    margin-top: 70px; }
     .wrapper section header {
       margin-bottom: 20px; }
-    .wrapper section .projects {
-      float: right;
-      position: relative;
-      top: 0px;
-      margin-right: -260px;
-      margin-left: 50px; }
-      .wrapper section .projects li {
-        float: left;
-        width: 110px;
-        text-align: center; }
     .wrapper section p span, .wrapper section li span {
-      background-color: #ff8700;
-      padding: 0px 4px 0;
       -webkit-border-radius: 3px 3px;
       -moz-border-radius: 3px / 3px;
       border-radius: 3px / 3px;
-      color: #fff;
-      -webkit-box-shadow: 1px 1px 2px #b8b8b8;
-      -moz-box-shadow: 1px 1px 2px #b8b8b8;
-      box-shadow: 1px 1px 2px #b8b8b8;
-      white-space: nowrap; }
-  .wrapper .notsomuch {
-    margin-top: 40px; }
+      white-space: nowrap;
+      color: #ff3f3f; }
+
+.job-container {
+  width: 100%;
+  overflow: hidden; }
+
+.job-floated {
+  float: left;
+  width: 47.5%;
+  margin-right: 2.5%; }
+
+.job-floated-right {
+  margin-left: 2.5%;
+  margin-right: 0; }
