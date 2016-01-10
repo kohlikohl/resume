@@ -27,7 +27,7 @@ function decryptURL(key,coded, altlinktext){
       link += (key.charAt(ltr));
     }
   }
-  if(altlinktext == 'Email')return '<a href="mailto:'+link+'">Send a mail</a>';
+  if(altlinktext == 'Email')return '<a href="mailto:'+link+'">Email</a>';
   if(altlinktext)return '<a href="'+link+'">'+altlinktext+'</a>';
   return '<a href="'+link+'">'+link+'</a>';
 }
